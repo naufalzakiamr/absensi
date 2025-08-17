@@ -483,12 +483,9 @@ function AdminPage() {
   );
 }
 
-// ==========================
-// App utama
-// ==========================
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Absensi />} />
@@ -503,8 +500,14 @@ function App() {
           }
         />
       </Routes>
-    </Router>
+    </>
   );
 }
 
-export default App;
+export default function Root() {
+  return (
+    <BrowserRouter basename="/absensi">
+      <App />
+    </BrowserRouter>
+  );
+}

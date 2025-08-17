@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://naufalzakiamr.github.io/absensi-react",
+  "homepage": "https://naufalzakiamr.github.io/absensi",
   "scripts": {
     "dev": "vite",
-    "start": "react-scripts start",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "jspdf": "^3.0.1",
